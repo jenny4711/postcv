@@ -14,7 +14,7 @@ export default function ItemBox({item,index}:{item:any,index:number}) {
     <div className="flex flex-col flex-grow leading-[22px]">
       <div className="flex flex-row items-center gap-1">
         <p className="font-semibold text-gray-500 text-[14px]">{item?.user}</p>
-        <p className="text-gray-400 text-[14px] lowercase">@{item?.user}</p>
+        <p className="text-gray-400 text-[14px] lowercase">@{item?.user.split(" ")[0]}</p>
         <span className="text-gray-400 ">·</span>
         <p className="text-gray-400 text-[14px]">{item?.duration}</p>
       </div>

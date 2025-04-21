@@ -1,6 +1,6 @@
-export default function JobListingItem({jobListing,index}:{jobListing:any,index:number}) {
+export default function JobListingItem({jobListing,key}:{jobListing:any,key:number}) {
   return (
-    <div key={index} className="flex items-center gap-2 justify-start">
+    <div key={key} className="flex items-center gap-2 justify-start">
       <img src={jobListing.avartar} alt={jobListing.title} className="w-[24px] h-[24px] rounded-full" />
       <div className="flex flex-col">
       <p className="text-[12px] text-gray-400">{jobListing.company}</p>
