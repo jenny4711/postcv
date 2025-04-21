@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased w-[400px] sm:w-[602px]`}
       >
         <div className="flex flex-row h-screen w-screen bg-[#fff] justify-center ">
           <DataProvider>
