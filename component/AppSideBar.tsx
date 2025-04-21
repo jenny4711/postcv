@@ -50,7 +50,7 @@ const items = [
 
 export default function AppSideBar() {
   return (
-    <div className="hidden sm:flex w-[280px]   justify-end ">
+    <div className="hidden sm:flex w-[284px]   justify-end ">
       <div className="flex flex-col width-[60px]  items-center px-[11px] gap-6  pt-[12px] ">
         {items.map((item) => (
           <Link className=" flex w-[36px] h-[36px] items-center justify-center  " key={item.title} href={item.url}>
