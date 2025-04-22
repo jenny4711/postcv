@@ -19,15 +19,15 @@ export default function ItemBox({item,index}:{item:any,index:number}) {
         <p className="text-gray-400 text-[14px]">{item?.duration}</p>
       </div>
 
-      <p className="pt-[4px] leading-[22px] text-[14px] tracking-[0.022rem] text-gray-500 w-[322px] sm:w-[433px] bg-blue-400 ">{item?.content}</p>
+      <p className="pt-[4px] leading-[22px] text-[14px] tracking-[0.022rem] text-gray-500 w-[322px] sm:w-[493px]  ">{item?.content}</p>
       {item?.image && (
-        <div  className="bg-green-400 w-[322px] sm:w-[473px] mt-2">
+        <div  className="bg-green-400 w-[322px] sm:w-[493px] mt-2">
           <Image 
             src={item?.image} 
             alt="content image" 
-            width={473} 
+            width={493} 
             height={266} 
-            className="rounded-xl w-full h-auto object-cover" 
+            className="rounded-xl w-full h-auto object-cover " 
           />
         </div>
       )}

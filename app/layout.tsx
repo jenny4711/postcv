@@ -22,15 +22,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} antialiased w-[400px] sm:w-[602px]`}
-      >
-        <div className="flex flex-row h-screen w-screen bg-[#fff] justify-center ">
-          <DataProvider>
-          <AppSideBar />
-          {children}
-          <RightSideMenu />
-          </DataProvider>
+      <body className={`${inter.variable} antialiased`}>
+        <div className="flex justify-center min-h-screen w-full">
+          <div className="flex flex-row w-full max-w-[1265px]"> {/* Adjust max-w based on total width */}
+            {/* Left Sidebar */}
+            <div className="w-[280px] h-screen sticky top-0 ml-10 hidden sm:flex justify-end">
+              <AppSideBar />
+            </div>
+
+            {/* Main Content Area */}
+            <main className="w-full max-w-[602px] border-x border-gray-100">
+              <DataProvider>
+                {children}
+              </DataProvider>
+            </main>
+
+            {/* Right Sidebar */}
+            <div className="w-[300px] h-screen sticky top-0 hidden lg:flex">
+              <RightSideMenu />
+            </div>
+          </div>
         </div>
       </body>
     </html>

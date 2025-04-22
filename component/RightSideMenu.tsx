@@ -35,7 +35,7 @@ const jobListings = [
 
 export default function RightSideMenu() {
   return (
-    <div className=" hidden lg:flex bg-white px-[24px] mt-[1px] flex-col justify-between ">
+    <div className=" hidden lg:flex w-[300px]  px-[24px] mt-[1px] flex-col justify-between ">
       {/* top box */}
       <div className="flex w-[252px] bg-white my-[24px] gap-3 flex-col">
 
