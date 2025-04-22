@@ -55,18 +55,18 @@ export default function RightSideMenu() {
 
       {/* bottom box */}
       <div className="flex w-[252px] bg-white my-[15px] gap-3 flex-col border border-gray-100 rounded-xl p-2">
-        <p className="text-sm text-[12px] text-gray-400">Active job listings</p>
+        <p className="text-sm text-[12px] text-gray-400 pl-2">Active job listings</p>
         
-        <div className="flex flex-col gap-3 px-2 ">
+        <div className="flex flex-col gap-3 px-1 ">
 {jobListings.map((jobListing,index)=>(
   <JobListingItem key={index} jobListing={jobListing} />
 ))}
 
 {/* buttonBoc */}
 
-<div className="flex  bg-white  flex-row justify-start gap-3 mb-2">
-        <Button variant="outline" className="rounded-2xl px-[24px] font-medium text-gray-500 text-[12px] py-0 border-gray-50">See all</Button>
-        <Button variant="outline" className="rounded-2xl px-[24px] font-medium text-gray-500 text-[12px] py-0 border-gray-50">Post a job</Button>
+<div className="flex pl-3   flex-row justify-start gap-3 mb-2">
+        <Button variant="outline" className="rounded-2xl px-[24px] font-medium text-gray-500 text-[12px] py-0 border-gray-50 ">See all</Button>
+        <Button variant="outline" className="rounded-2xl px-[24px] font-medium text-gray-500 text-[12px] py-0 border-gray-50 ">Post a job</Button>
       </div>
 
 
