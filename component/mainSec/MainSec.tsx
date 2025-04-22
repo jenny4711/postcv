@@ -4,6 +4,8 @@ import Highlight from "./Highlight";
 
 import { useDataContext } from "@/context/DataContext";
 export default function MainSec() {
+  console.log(window.innerWidth )
+  console.log(window.innerHeight,'height' )
   const {isActive} = useDataContext();
   return (
     <div>
@@ -11,5 +13,5 @@ export default function MainSec() {
       {isActive ? <EveryOne /> : <Highlight />}
     
     </div>
-  );
+  )
 }
