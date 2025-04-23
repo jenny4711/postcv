@@ -5,10 +5,10 @@ export default function Home() {
 
   return (
     <div className="flex flex-col h-screen w-full bg-[#fff]">
-      <div className="sticky top-0 z-10 bg-white border-b border-gray-50">
+      <div className="sticky top-0 z-100 bg-white border-b border-gray-50">
         <NavBar />
       </div>
-      <div className="flex-grow overflow-y-auto hide-scrollbar">
+      <div className="flex-grow overflow-y-auto hide-scrollbar  bg-amber-100">
         <MainSec />
       </div>
     </div>

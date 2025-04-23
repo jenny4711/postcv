@@ -24,22 +24,26 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
         <div className="flex justify-center min-h-screen w-full">
-          <div className="flex flex-row w-full max-w-[1265px]"> {/* Adjust max-w based on total width */}
+          <div className="flex flex-row w-full max-w-[1265px]">
             {/* Left Sidebar */}
-            <div className="w-[280px] h-screen sticky top-0 ml-10 hidden sm:flex justify-end">
-              <AppSideBar />
+            <div className="w-0  sm:w-15 lg:w-82 xl:w-82.5 bg-red-500  h-screen sticky top-0 overflow-hidden">
+              <div className="w-full h-full ">
+                <AppSideBar />
+              </div>
             </div>
 
             {/* Main Content Area */}
-            <main className="w-full max-w-[602px] border-x border-gray-100">
+            <main className="flex-1 min-w-[320px] max-w-[602px] border-x border-gray-100 transition-all duration-300">
               <DataProvider>
                 {children}
               </DataProvider>
             </main>
 
             {/* Right Sidebar */}
-            <div className="w-[300px] h-screen sticky top-0 hidden lg:flex">
-              <RightSideMenu />
+            <div className="w-0 lg:w-[300px] transition-all duration-300 ease-in-out h-screen sticky top-0">
+              <div className="opacity-0 lg:opacity-100 transition-opacity duration-300">
+                <RightSideMenu />
+              </div>
             </div>
           </div>
         </div>
