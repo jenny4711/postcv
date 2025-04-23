@@ -46,12 +46,12 @@ const items = [
 ]
 
 
-
+// sm:bg-amber-200 md:bg-green-300 lg:bg-blue-400 xl:bg-red-500
 
 export default function AppSideBar() {
   return (
     <div className="flex w-full h-full">
-      <div className="flex flex-col w-[60px] items-center gap-6 pt-[12px] ml-auto  bg-white sm:bg-amber-200 md:bg-green-300 lg:bg-blue-400 xl:bg-red-500">
+      <div className="flex flex-col w-[60px] items-center gap-6 pt-[12px] ml-auto  bg-white">
         {items.map((item) => (
           <Link 
             className="flex w-[36px] h-[36px] items-center justify-center transition-transform hover:scale-110 duration-200" 

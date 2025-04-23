@@ -9,7 +9,7 @@ export default function Highlight() {
      
       {/* first box - avatar and user duration and context */}
       {data.map((item,index)=>(
-        <div className="flex flex-col justify-center items-center border border-gray-100  w-[430px]  sm:w-[602px] ">
+        <div className="flex flex-col justify-center items-center border border-gray-100  w-[430px]  sm:w-[602px] hover:bg-gray-50  ">
      
         <ItemBox key={index} item={item} index={index} />
 

@@ -50,7 +50,7 @@ export default function RightSideMenu() {
       </div>
 
       {/* bottom box */}
-      <div className="flex w-full bg-white my-[15px] gap-3 flex-col border border-gray-100 rounded-xl p-2 transition-transform hover:scale-[1.02] duration-200">
+      <div className="flex w-full bg-white my-[15px] gap-3 flex-col border border-gray-100 rounded-xl p-2 ">
         <p className="text-sm text-[12px] text-gray-400">Active job listings</p>
         
         <div className="flex flex-col gap-3 px-2">
@@ -60,8 +60,8 @@ export default function RightSideMenu() {
 
           {/* buttonBox */}
           <div className="flex bg-white flex-row justify-start gap-3 mb-2">
-            <Button variant="outline" className="rounded-2xl px-[24px] font-medium text-gray-500 text-[12px] py-0 border-gray-50 transition-all hover:scale-105 duration-200">See all</Button>
-            <Button variant="outline" className="rounded-2xl px-[24px] font-medium text-gray-500 text-[12px] py-0 border-gray-50 transition-all hover:scale-105 duration-200">Post a job</Button>
+            <Button variant="outline" className="rounded-2xl w-27 h-8 font-medium text-gray-500 text-[12px] py-0 border-gray-50 ">See all</Button>
+            <Button variant="outline" className="rounded-2xl px-[24px] font-medium text-gray-500 text-[12px] py-0 border-gray-50">Post a job</Button>
           </div>
         </div>
       </div>

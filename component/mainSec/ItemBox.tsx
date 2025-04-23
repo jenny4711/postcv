@@ -5,7 +5,7 @@ import BookmarkIcon from '@/icons/BookmarkIcon';
 export default function ItemBox({item,index}:{item:any,index:number}) {
   return (
     // <div key={index} className="  flex flex-row   gap-3 py-[18px]  w-[437px] sm:w-[554px]     hover:bg-gray-50">
-    <div key={index} className=" mr-10  flex flex-row  gap-3   w-[430px] sm:w-screen justify-center  border border-gray-50 cursor-pointer  hover:bg-gray-50">
+    <div key={index} className=" mr-10  flex flex-row  gap-3   w-[430px] sm:w-screen justify-center  border border-gray-50 cursor-pointer  ">
       <div className="flex  flex-row   gap-3  pt-5 pb-[15px] px-[20px]  w-[382px] sm:w-[554px] ">
     <div className="  mt-[-4px] flex-shrink-0 w-[48px] h-[48px]  border-gray-500 ">
       <Image src={item?.avatar} alt="avatar" width={48} height={48} className="  rounded-full" sizes="48px" />

@@ -8,7 +8,7 @@ export default function Home() {
       <div className="sticky top-0 z-100 bg-white border-b border-gray-50">
         <NavBar />
       </div>
-      <div className="flex-grow overflow-y-auto hide-scrollbar  bg-amber-100">
+      <div className="flex-grow overflow-y-auto hide-scrollbar  ">
         <MainSec />
       </div>
     </div>

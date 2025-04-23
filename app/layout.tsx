@@ -26,7 +26,7 @@ export default function RootLayout({
         <div className="flex justify-center min-h-screen w-full">
           <div className="flex flex-row w-full max-w-[1265px]">
             {/* Left Sidebar */}
-            <div className="w-0  sm:w-15 lg:w-82 xl:w-82.5 bg-red-500  h-screen sticky top-0 overflow-hidden">
+            <div className="w-0  sm:w-15 lg:w-82 xl:w-82.5   h-screen sticky top-0 overflow-hidden">
               <div className="w-full h-full ">
                 <AppSideBar />
               </div>
