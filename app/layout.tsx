@@ -25,9 +25,9 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </head>
-      <body className={`${inter.variable} antialiased overflow-x-hidden `}>
-        <div className="flex justify-center min-h-screen  overflow-x-hidden  w-full">
-          <div className="flex flex-row  w-full max-w-[1265px]">
+      <body className={`${inter.variable} antialiased overflow-x-hidden`}>
+        <div className="flex justify-center min-h-screen w-full overflow-x-hidden">
+          <div className="flex flex-row w-full max-w-[1265px] overflow-x-hidden">
             {/* Left Sidebar w-15 sm:w-25 md:w-35 lg:w-75.5 xl:w-80.5 */}
             <div className="  w-0  sm:w-15 lg:w-75.5 xl:w-80.5   h-screen sticky top-0 overflow-hidden">
               <div className="w-full h-full  ">
