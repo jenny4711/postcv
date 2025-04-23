@@ -13,15 +13,15 @@ export default function ItemBox({item,index}:{item:any,index:number}) {
 
     <div className="flex flex-col flex-grow leading-[16px]">
       <div className="flex flex-row items-center gap-1">
-        <p className="font-semibold text-gray-500 text-[14px]">{item?.user} Not Found</p>
-        <p className="text-gray-400 text-[14px] lowercase"> @{item?.user.split(" ")[0]}</p>
-        <span className="text-gray-400 ">·</span>
-        <p className="text-gray-400 text-[14px]">{item?.duration}</p>
+        <p className=" text-[#111111] text-[14px]">{item?.user} Not Found</p>
+        <p className="text-[#999999] text-[14px] lowercase"> @{item?.user.split(" ")[0]}</p>
+        <span className="text-[#999999] ">·</span>
+        <p className="text-[#999999] text-[14px]">{item?.duration}</p>
       </div>
 
-      <p className="pt-[4px] leading-[22px] text-[14px] tracking-[0.022rem] text-gray-500 w-[322px] sm:w-[493px]  ">{item?.content}</p>
+      <p className="pt-[4px] leading-[22px] text-[14px] tracking-[0.022rem] text-[#555555] w-[322px] sm:w-[493px]  ">{item?.content}</p>
       {item?.image && (
-        <div  className="bg-green-400 w-[377px] sm:w-[493px] mt-2">
+        <div  className="w-[322px] sm:w-[493px] mt-2">
           <Image 
             src={item?.image} 
             alt="content image" 

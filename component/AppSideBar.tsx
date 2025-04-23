@@ -54,7 +54,7 @@ export default function AppSideBar() {
       <div className="flex flex-col w-[60px] items-center gap-6 pt-[12px] ml-auto  bg-white">
         {items.map((item) => (
           <Link 
-            className="flex w-[36px] h-[36px] items-center justify-center transition-transform hover:scale-110 duration-200" 
+            className="flex w-[36px] h-[36px] items-center justify-center " 
             key={item.title} 
             href={item.url}
           >

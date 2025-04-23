@@ -39,19 +39,19 @@ export default function RightSideMenu() {
       <div className="flex w-full bg-white my-[24px] gap-3 flex-col ml-0.5  ">
         <div className="w-full flex items-start flex-col">
           <p className="text-[14px]">Posts</p>
-          <p className="text-gray-400 text-[12px] leading-5">A community app by Read.cv </p>
+          <p className="text-[#999999] text-[12px] leading-5">A community app by Read.cv </p>
           <div className="flex flex-row gap-2">
-            <Link className="text-gray-500 text-[12px] hover:text-gray-700 transition-colors duration-200" href="/">About</Link>
-            <Link className="text-gray-500 text-[12px] hover:text-gray-700 transition-colors duration-200" href="/">Conduct</Link>
-            <Link className="text-gray-500 text-[12px] hover:text-gray-700 transition-colors duration-200" href="/">Download for iOS</Link>
+            <Link className="text-[#555555] text-[12px] hover:text-gray-700 transition-colors duration-200" href="/">About</Link>
+            <Link className="text-[#555555] text-[12px] hover:text-gray-700 transition-colors duration-200" href="/">Conduct</Link>
+            <Link className="text-[#555555] text-[12px] hover:text-gray-700 transition-colors duration-200" href="/">Download for iOS</Link>
           </div>
         </div>
-        <Button className="rounded-3xl font-semibold transition-all hover:scale-[1.02] duration-200">Log in with Read.cv</Button>
+        <Button className="rounded-3xl font-semibold bg-[#111111] text-[#ffffff] ">Log in with Read.cv</Button>
       </div>
 
       {/* bottom box */}
       <div className="flex w-full  my-[15px] gap-3 flex-col border border-gray-100 rounded-xl mb-7 ml-1.5 ">
-      <p className="text-sm text-[12px] text-gray-400 ml-2 ">Active job listings</p>
+      <p className="text-sm text-[12px] text-[#999999] ml-2 ">Active job listings</p>
         
         <div className="flex  flex-col mb-2 ">
 
@@ -62,9 +62,9 @@ export default function RightSideMenu() {
           ))}
 
           {/* buttonBox */}
-          <div className="flex  flex-row justify-center   ">
-            <Button variant="outline" className="rounded-2xl w-[109px] px[12px]  font-medium text-gray-500 text-[12px] py-0 border-gray-50 mx-1 ">See all</Button>
-            <Button variant="outline" className="rounded-2xl w-[109px] px-[12px] font-medium text-gray-500 text-[12px] py-0 border-gray-50 mx-1">Post a job</Button>
+          <div className="flex  flex-row justify-center  p-2 ">
+            <Button variant="outline" className="rounded-2xl w-[109px] px[12px]  font-medium text-[#111111] text-[12px] py-0 border-gray-50 mx-1 ">See all</Button>
+            <Button variant="outline" className="rounded-2xl w-[109px] px-[12px] font-medium text-[#111111] text-[12px] py-0 border-gray-50 mx-1">Post a job</Button>
           </div>
         </div>
       </div>

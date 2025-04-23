@@ -23,11 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
-        <div className="flex justify-center min-h-screen w-full">
-          <div className="flex flex-row w-full max-w-[1265px]">
+        <div className="flex justify-center min-h-screen  overflow-hidden  w-full">
+          <div className="flex flex-row  w-full max-w-[1265px]">
             {/* Left Sidebar */}
-            <div className="w-0  sm:w-15 lg:w-82 xl:w-82.5   h-screen sticky top-0 overflow-hidden">
-              <div className="w-full h-full ">
+            <div className=" w-0  sm:w-15 lg:w-75.5 xl:w-80.5   h-screen sticky top-0 overflow-hidden">
+              <div className="w-full h-full sm:bg-amber-200 md:bg-green-300 lg:bg-blue-400 xl:bg-red-500 ">
                 <AppSideBar />
               </div>
             </div>
