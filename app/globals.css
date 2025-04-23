@@ -115,9 +115,21 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    touch-action: pan-y pinch-zoom;
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    touch-action: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  html {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    touch-action: none;
   }
 }
 
