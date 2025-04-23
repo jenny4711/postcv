@@ -34,9 +34,9 @@ const jobListings = [
 
 export default function RightSideMenu() {
   return (
-    <div className="flex w-full  h-screen px-6 mt-[1px] flex-col justify-between transition-all duration-300">
+    <div className="flex w-full  h-screen px-6 mt-[1px] flex-col justify-between ">
       {/* top box */}
-      <div className="flex w-full bg-white my-[24px] gap-3 flex-col  ">
+      <div className="flex w-full bg-white my-[24px] gap-3 flex-col ml-0.5  ">
         <div className="w-full flex items-start flex-col">
           <p className="text-[14px]">Posts</p>
           <p className="text-gray-400 text-[12px] leading-5">A community app by Read.cv </p>
@@ -50,18 +50,21 @@ export default function RightSideMenu() {
       </div>
 
       {/* bottom box */}
-      <div className="flex w-full bg-white my-[15px] gap-3 flex-col border border-gray-100 rounded-xl p-2 ">
-        <p className="text-sm text-[12px] text-gray-400">Active job listings</p>
+      <div className="flex w-full  my-[15px] gap-3 flex-col border border-gray-100 rounded-xl mb-7 ml-1.5 ">
+      <p className="text-sm text-[12px] text-gray-400 ml-2 ">Active job listings</p>
         
-        <div className="flex flex-col gap-3 px-2">
+        <div className="flex  flex-col mb-2 ">
+
           {jobListings.map((jobListing, index) => (
+            <div className= "mb-2   ">
             <JobListingItem key={index} jobListing={jobListing} />
+            </div>
           ))}
 
           {/* buttonBox */}
-          <div className="flex bg-white flex-row justify-start gap-3 mb-2">
-            <Button variant="outline" className="rounded-2xl w-27 h-8 font-medium text-gray-500 text-[12px] py-0 border-gray-50 ">See all</Button>
-            <Button variant="outline" className="rounded-2xl px-[24px] font-medium text-gray-500 text-[12px] py-0 border-gray-50">Post a job</Button>
+          <div className="flex  flex-row justify-center   ">
+            <Button variant="outline" className="rounded-2xl w-[109px] px[12px]  font-medium text-gray-500 text-[12px] py-0 border-gray-50 mx-1 ">See all</Button>
+            <Button variant="outline" className="rounded-2xl w-[109px] px-[12px] font-medium text-gray-500 text-[12px] py-0 border-gray-50 mx-1">Post a job</Button>
           </div>
         </div>
       </div>
