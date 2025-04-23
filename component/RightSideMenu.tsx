@@ -34,16 +34,16 @@ const jobListings = [
 
 export default function RightSideMenu() {
   return (
-    <div className="flex w-full  h-screen px-6 mt-[1px] flex-col justify-between ">
+    <div className="flex w-full  h-screen px-6  flex-col justify-between  ">
       {/* top box */}
       <div className="flex w-full bg-white my-[24px] gap-3 flex-col ml-0.5  ">
         <div className="w-full flex items-start flex-col">
           <p className="text-[14px]">Posts</p>
-          <p className="text-[#999999] text-[12px] leading-5">A community app by Read.cv </p>
+          <p className="text-[#999999] text-[12px] leading-5 pb-0.5">A community app by Read.cv </p>
           <div className="flex flex-row gap-2">
-            <Link className="text-[#555555] text-[12px] hover:text-gray-700 transition-colors duration-200" href="/">About</Link>
-            <Link className="text-[#555555] text-[12px] hover:text-gray-700 transition-colors duration-200" href="/">Conduct</Link>
-            <Link className="text-[#555555] text-[12px] hover:text-gray-700 transition-colors duration-200" href="/">Download for iOS</Link>
+            <Link className="text-[#555555] text-[12px] hover:underline " href="#">About</Link>
+            <Link className="text-[#555555] text-[12px] hover:underline" href="#">Conduct</Link>
+            <Link className="text-[#555555] text-[12px] hover:underline" href="#">Download for iOS</Link>
           </div>
         </div>
         <Button className="rounded-3xl font-semibold bg-[#111111] text-[#ffffff] ">Log in with Read.cv</Button>

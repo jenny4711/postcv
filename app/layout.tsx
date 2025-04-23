@@ -22,26 +22,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      </head>
       <body className={`${inter.variable} antialiased`}>
         <div className="flex justify-center min-h-screen  overflow-hidden  w-full">
           <div className="flex flex-row  w-full max-w-[1265px]">
-            {/* Left Sidebar */}
-            <div className=" w-0  sm:w-15 lg:w-75.5 xl:w-80.5   h-screen sticky top-0 overflow-hidden">
-              <div className="w-full h-full sm:bg-amber-200 md:bg-green-300 lg:bg-blue-400 xl:bg-red-500 ">
+            {/* Left Sidebar w-15 sm:w-25 md:w-35 lg:w-75.5 xl:w-80.5 */}
+            <div className="  w-0  sm:w-15 lg:w-75.5 xl:w-80.5   h-screen sticky top-0 overflow-hidden">
+              <div className="w-full h-full  ">
                 <AppSideBar />
               </div>
             </div>
 
             {/* Main Content Area */}
-            <main className="flex-1 min-w-[320px] max-w-[602px] border-x border-gray-100 transition-all duration-300">
+            <main className="flex-1 min-w-[320px] max-w-[602px] border-x border-gray-100 ">
               <DataProvider>
                 {children}
               </DataProvider>
             </main>
 
             {/* Right Sidebar */}
-            <div className="w-0 lg:w-[300px] transition-all duration-300 ease-in-out h-screen sticky top-0">
-              <div className="opacity-0 lg:opacity-100 transition-opacity duration-300">
+            <div className="w-0 md:w-[300px]  transition-all duration-300 ease-in-out h-screen sticky top-0">
+              <div className="opacity-0 md:opacity-100 transition-opacity duration-300">
                 <RightSideMenu />
               </div>
             </div>

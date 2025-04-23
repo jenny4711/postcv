@@ -13,7 +13,7 @@ export default function Highlight() {
      
         <ItemBox key={index} item={item} index={index} />
 
-  <div className="flex flex-row  items-center justify-center pb-[17px]  ml-20 w-[377px] sm:w-[493px]   gap-12 sm:gap-21  pt-0   overflow-x-hidden">
+  <div className="flex flex-row  items-center justify-center pb-[19px]  ml-15 w-[377px] sm:w-[493px]   gap-12 sm:gap-21  pt-0   overflow-x-hidden">
       <span className="text-gray-400 text-sm flex flex-row gap-2 "> <CommentIcon className="w-6 h-6" /> {item?.comments}</span>
       <span className="text-gray-400 text-sm flex flex-row gap-2 "> <RetweetIcon className="w-6 h-6" /> </span>
       <span className="text-gray-400 text-sm flex flex-row gap-2 "> <LikeIcon className="w-6 h-6" /> {item?.likes}</span>
