@@ -7,7 +7,7 @@ export default function MainSec() {
 
   const {isActive} = useDataContext();
   return (
-    <div>
+    <div >
     
       {isActive ? <EveryOne /> : <Highlight />}
     

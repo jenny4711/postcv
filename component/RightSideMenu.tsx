@@ -56,15 +56,15 @@ export default function RightSideMenu() {
         <div className="flex  flex-col mb-2 ">
 
           {jobListings.map((jobListing, index) => (
-            <div className= "mb-2   ">
+            <div className= "mb-2  hover:bg-gray-50 ">
             <JobListingItem key={index} jobListing={jobListing} />
             </div>
           ))}
 
           {/* buttonBox */}
           <div className="flex  flex-row justify-center  p-2 ">
-            <Button variant="outline" className="rounded-2xl w-[109px] px[12px]  font-medium text-[#111111] text-[12px] py-0 border-gray-50 mx-1 ">See all</Button>
-            <Button variant="outline" className="rounded-2xl w-[109px] px-[12px] font-medium text-[#111111] text-[12px] py-0 border-gray-50 mx-1">Post a job</Button>
+            <Button variant="outline" className="rounded-2xl w-[109px] px[12px]  font-medium text-[#111111] text-[12px] py-0 border-gray-50 mx-1 hover:bg-[#ffffff] ">See all</Button>
+            <Button variant="outline" className="rounded-2xl w-[109px] px-[12px] font-medium text-[#111111] text-[12px] py-0 border-gray-50 mx-1 hover:bg-[#ffffff]">Post a job</Button>
           </div>
         </div>
       </div>
